@@ -1,12 +1,12 @@
 export type CodePair = [number, number]
 
-export type Modifier = 'reset' | 'bold' | 'dim' | 'italic' | 'underline' | 'inverse' | 'hidden' | 'strikethrough' | 'overline'
+export type Modifier = 'bold' | 'dim' | 'hidden' | 'inverse' | 'italic' | 'overline' | 'reset' | 'strikethrough' | 'underline'
 
-export type Color = 'black' | 'red' | 'green' | 'yellow' | 'blue' | 'magenta' | 'cyan' | 'white' | 'gray' | 'grey' | 'blackBright' | 'redBright' | 'greenBright' | 'yellowBright' | 'blueBright' | 'magentaBright' | 'cyanBright' | 'whiteBright'
+export type Color = 'black' | 'blackBright' | 'blue' | 'blueBright' | 'cyan' | 'cyanBright' | 'gray' | 'green' | 'greenBright' | 'grey' | 'magenta' | 'magentaBright' | 'red' | 'redBright' | 'white' | 'whiteBright' | 'yellow' | 'yellowBright'
 
-export type BackgroundColor = 'bgBlack' | 'bgRed' | 'bgGreen' | 'bgYellow' | 'bgBlue' | 'bgMagenta' | 'bgCyan' | 'bgWhite' | 'bgBlackBright' | 'bgRedBright' | 'bgGreenBright' | 'bgYellowBright' | 'bgBlueBright' | 'bgMagentaBright' | 'bgCyanBright' | 'bgWhiteBright' | 'bgGray' | 'bgGrey'
+export type BackgroundColor = 'bgBlack' | 'bgBlackBright' | 'bgBlue' | 'bgBlueBright' | 'bgCyan' | 'bgCyanBright' | 'bgGray' | 'bgGreen' | 'bgGreenBright' | 'bgGrey' | 'bgMagenta' | 'bgMagentaBright' | 'bgRed' | 'bgRedBright' | 'bgWhite' | 'bgWhiteBright' | 'bgYellow' | 'bgYellowBright'
 
-export type StyleCategory<Allowed extends string> = Partial<AnsiMethods> & Partial<AnsiControls> & Record<Allowed, CodePair>
+export type StyleCategory<Allowed extends string> = Partial<AnsiControls> & Partial<AnsiMethods> & Record<Allowed, CodePair>
 
 export type AnsiRenderFn = (...args) => string
 
@@ -21,7 +21,6 @@ export interface AnsiControls {
 	open: string
 }
 
-
 export interface AnsiCodes {
 	modifier: Record<Modifier, CodePair>
 	color: Record<Color, CodePair>
@@ -35,10 +34,10 @@ export interface StyleCodes {
 }
 
 export interface Styles extends StyleCodes {
-	rgbToAnsi256: (r: number, g: number, b: number) => number
-	hexToRgb: (hex: string) => [number, number, number]
-	ansi256ToAnsi: (color: number) => number
-	hexToAnsi256: (hex: string) => number
+	rgbToAnsi256(r: number, g: number, b: number): number
+	hexToRgb(hex: string): [number, number, number]
+	ansi256ToAnsi(color: number): number
+	hexToAnsi256(hex: string): number
 }
 
 export const ANSI_BACKGROUND_OFFSET = 10
