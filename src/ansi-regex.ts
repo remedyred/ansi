@@ -1,3 +1,4 @@
+/* eslint-disable array-element-newline */
 /**
  * Ansi regular expression
  * @param onlyFirst

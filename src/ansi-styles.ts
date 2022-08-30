@@ -1,4 +1,4 @@
-import {ANSI_BACKGROUND_OFFSET, ansiCodes, AnsiCodes, AnsiRenderFn, StyleCodes, Styles} from './common'
+import {ANSI_BACKGROUND_OFFSET, ansiCodes, AnsiRenderFn, StyleCodes, Styles} from './common'
 
 function wrapAnsi16(offset = 0): AnsiRenderFn {
 	return (code: number): string => {
@@ -97,8 +97,7 @@ function styleFactory(): Styles {
 				let {colorString} = matches.groups
 
 				if (colorString.length === 3) {
-					colorString = colorString.split('').map(character => character + character)
-						.join('')
+					colorString = [...colorString].map(character => character + character).join('')
 				}
 
 				const integer = Number.parseInt(colorString, 16)
