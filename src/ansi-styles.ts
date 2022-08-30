@@ -168,4 +168,5 @@ function styleFactory(): Styles {
 	return styles
 }
 
+export {Styles, StyleCategory, BackgroundColor, Color, Modifier, AnsiControls, AnsiMethods, CodePair, AnsiRenderFn} from './common'
 export const ansiStyles = styleFactory()
