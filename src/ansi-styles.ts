@@ -1,4 +1,4 @@
-import {ANSI_BACKGROUND_OFFSET, ansiCodes, AnsiCodes, AnsiRenderFn, StyleCodes, Styles} from './common'
+import {ANSI_BACKGROUND_OFFSET, ansiCodes, AnsiRenderFn, StyleCodes, Styles} from './common'
 
 function wrapAnsi16(offset = 0): AnsiRenderFn {
 	return (code: number): string => {
@@ -89,7 +89,7 @@ function styleFactory(): Styles {
 		},
 		hexToRgb: {
 			value(hex) {
-				const matches = /(?<colorString>[a-f\d]{6}|[a-f\d]{3})/i.exec(hex.toString(16))
+				const matches = /(?<colorString>[\da-f]{6}|[\da-f]{3})/i.exec(hex.toString(16))
 				if (!matches) {
 					return [0, 0, 0]
 				}
@@ -97,8 +97,7 @@ function styleFactory(): Styles {
 				let {colorString} = matches.groups
 
 				if (colorString.length === 3) {
-					colorString = colorString.split('').map(character => character + character)
-						.join('')
+					colorString = [...colorString].map(character => character + character).join('')
 				}
 
 				const integer = Number.parseInt(colorString, 16)
@@ -168,4 +167,5 @@ function styleFactory(): Styles {
 	return styles
 }
 
+export {Styles, StyleCategory, BackgroundColor, Color, Modifier, AnsiControls, AnsiMethods, CodePair, AnsiRenderFn} from './common'
 export const ansiStyles = styleFactory()
