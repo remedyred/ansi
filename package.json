@@ -15,41 +15,44 @@
 		"dist"
 	],
 	"scripts": {
-		"build": "tsup --minify",
-		"build:types": "tsc --emitDeclarationOnly --declarationDir dist",
+		"build": "pnpm run bundle --minify",
+		"bundle": "tsup",
 		"clean": "shx rm -rf ./dist ",
-		"depcheck": "depcheck",
-		"dev": "tsup",
-		"dev:types": "tsc --emitDeclarationOnly --declarationMap --declarationDir .types",
+		"dev": "concurrently -k -c magenta,cyan pnpm:dev:*",
+		"dev:build": "pnpm run bundle --sourcemap",
+		"dev:types": "tsc --project ./tsconfig.types.json",
 		"docs": "typedoc",
-		"index": "indexer",
 		"test": "jest",
 		"watch": "concurrently -k -c magenta,cyan pnpm:watch:*",
 		"watch:dev": "pnpm run dev --watch",
 		"watch:types": "pnpm run dev:types --watch"
 	},
 	"jest": {
+		"onlyChanged": true,
+		"preset": "ts-jest",
 		"testEnvironment": "node"
 	},
 	"devDependencies": {
+		"@snickbit/eslint-config": "1.3.2",
+		"@types/jest": "28.1.8",
 		"concurrently": "7.3.0",
-		"@snickbit/indexer": "*",
-		"jest": "29.0.1",
+		"eslint": "8.22.0",
+		"jest": "28.1.3",
 		"shx": "0.3.4",
-		"tsup": "6.2.3",
-		"typedoc": "0.23.11",
+		"ts-jest": "28.0.8",
+		"tsup": "6.2.2",
+		"typedoc": "0.23.10",
 		"typedoc-plugin-markdown": "3.13.4",
-		"typescript": "4.8.2"
+		"typescript": "4.7.4"
 	},
 	"engines": {
 		"node": ">= 12"
 	},
 	"tsup": {
 		"entry": [
-			"src/index.js"
+			"src/index.ts"
 		],
 		"clean": true,
-		"dts": true,
 		"format": [
 			"esm",
 			"cjs"
