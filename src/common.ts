@@ -38,6 +38,8 @@ export interface Styles extends StyleCodes {
 	hexToRgb(hex: string): [number, number, number]
 	ansi256ToAnsi(color: number): number
 	hexToAnsi256(hex: string): number
+	hexToAnsi(hex: string): number
+	rgbToAnsi(red, green, blue): number
 }
 
 export const ANSI_BACKGROUND_OFFSET = 10

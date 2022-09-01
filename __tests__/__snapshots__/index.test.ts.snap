@@ -1,0 +1,202 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`generateStyleCodes generateStyleCodes should match snapshot 1`] = `
+Object {
+  "ansi": Object {
+    "close": "[undefinedm",
+    "open": "[undefinedm",
+  },
+  "ansi16m": Object {
+    "close": "[undefinedm",
+    "open": "[undefinedm",
+  },
+  "ansi256": Object {
+    "close": "[undefinedm",
+    "open": "[undefinedm",
+  },
+  "bgBlack": Object {
+    "close": "[undefinedm",
+    "open": "[undefinedm",
+  },
+  "bgBlackBright": Object {
+    "close": "[undefinedm",
+    "open": "[undefinedm",
+  },
+  "bgBlue": Object {
+    "close": "[undefinedm",
+    "open": "[undefinedm",
+  },
+  "bgBlueBright": Object {
+    "close": "[undefinedm",
+    "open": "[undefinedm",
+  },
+  "bgCyan": Object {
+    "close": "[undefinedm",
+    "open": "[undefinedm",
+  },
+  "bgCyanBright": Object {
+    "close": "[undefinedm",
+    "open": "[undefinedm",
+  },
+  "bgGray": Object {
+    "close": "[undefinedm",
+    "open": "[undefinedm",
+  },
+  "bgGreen": Object {
+    "close": "[undefinedm",
+    "open": "[undefinedm",
+  },
+  "bgGreenBright": Object {
+    "close": "[undefinedm",
+    "open": "[undefinedm",
+  },
+  "bgGrey": Object {
+    "close": "[undefinedm",
+    "open": "[undefinedm",
+  },
+  "bgMagenta": Object {
+    "close": "[undefinedm",
+    "open": "[undefinedm",
+  },
+  "bgMagentaBright": Object {
+    "close": "[undefinedm",
+    "open": "[undefinedm",
+  },
+  "bgRed": Object {
+    "close": "[undefinedm",
+    "open": "[undefinedm",
+  },
+  "bgRedBright": Object {
+    "close": "[undefinedm",
+    "open": "[undefinedm",
+  },
+  "bgWhite": Object {
+    "close": "[undefinedm",
+    "open": "[undefinedm",
+  },
+  "bgWhiteBright": Object {
+    "close": "[undefinedm",
+    "open": "[undefinedm",
+  },
+  "bgYellow": Object {
+    "close": "[undefinedm",
+    "open": "[undefinedm",
+  },
+  "bgYellowBright": Object {
+    "close": "[undefinedm",
+    "open": "[undefinedm",
+  },
+  "black": Object {
+    "close": "[undefinedm",
+    "open": "[undefinedm",
+  },
+  "blackBright": Object {
+    "close": "[undefinedm",
+    "open": "[undefinedm",
+  },
+  "blue": Object {
+    "close": "[undefinedm",
+    "open": "[undefinedm",
+  },
+  "blueBright": Object {
+    "close": "[undefinedm",
+    "open": "[undefinedm",
+  },
+  "bold": Object {
+    "close": "[undefinedm",
+    "open": "[undefinedm",
+  },
+  "close": Object {
+    "close": "[[m",
+    "open": "[m",
+  },
+  "cyan": Object {
+    "close": "[undefinedm",
+    "open": "[undefinedm",
+  },
+  "cyanBright": Object {
+    "close": "[undefinedm",
+    "open": "[undefinedm",
+  },
+  "dim": Object {
+    "close": "[undefinedm",
+    "open": "[undefinedm",
+  },
+  "gray": Object {
+    "close": "[undefinedm",
+    "open": "[undefinedm",
+  },
+  "green": Object {
+    "close": "[undefinedm",
+    "open": "[undefinedm",
+  },
+  "greenBright": Object {
+    "close": "[undefinedm",
+    "open": "[undefinedm",
+  },
+  "grey": Object {
+    "close": "[undefinedm",
+    "open": "[undefinedm",
+  },
+  "hidden": Object {
+    "close": "[undefinedm",
+    "open": "[undefinedm",
+  },
+  "inverse": Object {
+    "close": "[undefinedm",
+    "open": "[undefinedm",
+  },
+  "italic": Object {
+    "close": "[undefinedm",
+    "open": "[undefinedm",
+  },
+  "magenta": Object {
+    "close": "[undefinedm",
+    "open": "[undefinedm",
+  },
+  "magentaBright": Object {
+    "close": "[undefinedm",
+    "open": "[undefinedm",
+  },
+  "overline": Object {
+    "close": "[undefinedm",
+    "open": "[undefinedm",
+  },
+  "red": Object {
+    "close": "[undefinedm",
+    "open": "[undefinedm",
+  },
+  "redBright": Object {
+    "close": "[undefinedm",
+    "open": "[undefinedm",
+  },
+  "reset": Object {
+    "close": "[undefinedm",
+    "open": "[undefinedm",
+  },
+  "strikethrough": Object {
+    "close": "[undefinedm",
+    "open": "[undefinedm",
+  },
+  "underline": Object {
+    "close": "[undefinedm",
+    "open": "[undefinedm",
+  },
+  "white": Object {
+    "close": "[undefinedm",
+    "open": "[undefinedm",
+  },
+  "whiteBright": Object {
+    "close": "[undefinedm",
+    "open": "[undefinedm",
+  },
+  "yellow": Object {
+    "close": "[undefinedm",
+    "open": "[undefinedm",
+  },
+  "yellowBright": Object {
+    "close": "[undefinedm",
+    "open": "[undefinedm",
+  },
+}
+`;
