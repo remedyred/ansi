@@ -17,8 +17,10 @@
 ### Methods
 
 - [ansi256ToAnsi](Styles.md#ansi256toansi)
+- [hexToAnsi](Styles.md#hextoansi)
 - [hexToAnsi256](Styles.md#hextoansi256)
 - [hexToRgb](Styles.md#hextorgb)
+- [rgbToAnsi](Styles.md#rgbtoansi)
 - [rgbToAnsi256](Styles.md#rgbtoansi256)
 
 ## Properties
@@ -69,6 +71,22 @@ StyleCodes.modifier
 
 ___
 
+### hexToAnsi
+
+▸ **hexToAnsi**(`hex`): `number`
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `hex` | `string` |
+
+#### Returns
+
+`number`
+
+___
+
 ### hexToAnsi256
 
 ▸ **hexToAnsi256**(`hex`): `number`
@@ -98,6 +116,24 @@ ___
 #### Returns
 
 [`number`, `number`, `number`]
+
+___
+
+### rgbToAnsi
+
+▸ **rgbToAnsi**(`red`, `green`, `blue`): `number`
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `red` | `any` |
+| `green` | `any` |
+| `blue` | `any` |
+
+#### Returns
+
+`number`
 
 ___
 
