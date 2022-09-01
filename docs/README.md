@@ -24,6 +24,7 @@
 ### Functions
 
 - [ansiRegex](README.md#ansiregex)
+- [generateStyleCodes](README.md#generatestylecodes)
 - [stripAnsi](README.md#stripansi)
 
 ## Type Aliases
@@ -112,14 +113,23 @@ Ansi regular expression
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `onlyFirst` | `Object` |
-| `onlyFirst.onlyFirst` | `boolean` |
+| Name | Type | Default value |
+| :------ | :------ | :------ |
+| `onlyFirst` | `boolean` | `false` |
 
 #### Returns
 
 `RegExp`
+
+___
+
+### generateStyleCodes
+
+▸ **generateStyleCodes**(): `StyleCodes`
+
+#### Returns
+
+`StyleCodes`
 
 ___
 
