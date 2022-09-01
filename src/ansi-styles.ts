@@ -18,7 +18,7 @@ function wrapAnsi16m(offset = 0): AnsiRenderFn {
 	}
 }
 
-function generateStyleCodes() {
+export function generateStyleCodes() {
 	const codes = new Map()
 
 	const styleCodes: StyleCodes = {...ansiCodes}
