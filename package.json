@@ -1,6 +1,6 @@
 {
 	"name": "@snickbit/ansi",
-	"version": "0.0.13",
+	"version": "0.0.14",
 	"description": "Cross-platform replacement for chalk/ansi-* modules.",
 	"license": "MIT",
 	"exports": {
