@@ -18,14 +18,14 @@
 		"build": "pnpm run bundle --minify",
 		"bundle": "tsup",
 		"clean": "shx rm -rf ./dist ",
-		"dev": "concurrently -k -c magenta,cyan pnpm:dev:*",
+		"dev": "concurrently -c magenta,cyan pnpm:dev:*",
 		"dev:build": "pnpm run bundle --sourcemap",
 		"dev:types": "tsc --project ./tsconfig.types.json",
 		"docs": "typedoc",
 		"test": "jest",
 		"test:ci": "jest --ci --onlyChanged",
 		"watch": "concurrently -k -c magenta,cyan pnpm:watch:*",
-		"watch:dev": "pnpm run dev --watch",
+		"watch:build": "pnpm run dev:build --watch",
 		"watch:types": "pnpm run dev:types --watch"
 	},
 	"release": {
