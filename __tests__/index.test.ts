@@ -1,12 +1,11 @@
 import {ansiRegex, ansiStyles, generateStyleCodes, stripAnsi} from '../src'
 
-const BLACK = '\u001b[30m'
-const RED = '\u001b[31m'
-const GREEN = '\u001b[32m'
+const BLACK = '\u001B[30m'
+const RED = '\u001B[31m'
+const GREEN = '\u001B[32m'
 const ANSI_STRING = `${RED} ${GREEN} ${BLACK}`
 
-
-describe("ansiRegex", () => {
+describe('ansiRegex', () => {
 	it('should return an instance of RegExp', () => expect(ansiRegex()).toBeInstanceOf(RegExp))
 
 	it('should have the g flag', () => expect(ansiRegex().flags).toBe('g'))
@@ -22,7 +21,7 @@ describe("ansiRegex", () => {
 	})
 })
 
-describe("stripAnsi", () => {
+describe('stripAnsi', () => {
 	it('should strip ansi from a string', () => {
 		expect(stripAnsi(ANSI_STRING)).toBe('  ')
 	})
@@ -40,8 +39,8 @@ describe('ansiStyles', () => {
 	it('should have a hexToAnsi method', () => expect(ansiStyles.hexToAnsi).toBeInstanceOf(Function))
 })
 
-describe("generateStyleCodes", () => {
-	it("generateStyleCodes should match snapshot", () => {
+describe('generateStyleCodes', () => {
+	it('generateStyleCodes should match snapshot', () => {
 		expect(generateStyleCodes()).toMatchSnapshot()
 	})
 })
