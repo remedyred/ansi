@@ -18,7 +18,7 @@
 		"build": "pnpm run bundle --minify",
 		"bundle": "tsup",
 		"clean": "shx rm -rf ./dist ",
-"dev": "pnpm run bundle --sourcemap",
+		"dev": "pnpm run bundle --sourcemap",
 		"dev:types": "tsc --project ./tsconfig.types.json",
 		"docs": "typedoc",
 		"test": "jest",
