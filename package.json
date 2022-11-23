@@ -36,11 +36,11 @@
 	},
 	"devDependencies": {
 		"@snickbit/eslint-config": "1.3.7",
-		"@snickbit/semantic-release": "^1.5.3",
+		"@snickbit/semantic-release": "1.6.3",
 		"@types/jest": "29.1.1",
 		"eslint": "8.23.0",
 		"jest": "28.1.3",
-		"semantic-release": "^19.0.5",
+		"semantic-release": "19.0.5",
 		"shx": "0.3.4",
 		"ts-jest": "28.0.8",
 		"tsup": "6.2.3",
